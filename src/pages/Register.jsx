@@ -26,7 +26,7 @@ const Register = () => {
           name: name,
           contact: contact,
         };
-        fetch("https://tv-bazar-server.vercel.app/user", {
+        fetch("https://tv-bazar-server-2.onrender.com/user", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

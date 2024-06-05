@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("https://tv-bazar-server.vercel.app/products"),
+        loader: () => fetch("https://tv-bazar-server-2.onrender.com/products"),
       },
       {
         path: "about",
@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://tv-bazar-server.vercel.app/products/${params.id}`),
+          fetch(`https://tv-bazar-server-2.onrender.com/products/${params.id}`),
       },
     ],
   },
@@ -82,7 +82,7 @@ export const router = createBrowserRouter([
             <AllProducts />
           </PrivateRoute>
         ),
-        loader: () => fetch("https://tv-bazar-server.vercel.app/products"),
+        loader: () => fetch("https://tv-bazar-server-2.onrender.com/products"),
       },
       {
         path: "profile/edit/:id",
@@ -92,7 +92,9 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://tv-bazar-server.vercel.app/user/data/${params.id}`),
+          fetch(
+            `https://tv-bazar-server-2.onrender.com/user/data/${params.id}`
+          ),
       },
 
       {
@@ -103,7 +105,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://tv-bazar-server.vercel.app/products/${params.id}`),
+          fetch(`https://tv-bazar-server-2.onrender.com/products/${params.id}`),
       },
     ],
   },

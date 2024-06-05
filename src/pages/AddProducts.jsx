@@ -20,7 +20,7 @@ const AddProducts = () => {
 
     console.log(productsData);
 
-    await fetch("https://tv-bazar-server.vercel.app/products", {
+    await fetch("https://tv-bazar-server-2.onrender.com/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

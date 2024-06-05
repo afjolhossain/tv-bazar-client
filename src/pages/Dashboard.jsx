@@ -7,7 +7,7 @@ const Dashboard = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(`https://tv-bazar-server.vercel.app/user/${user?.email}`)
+    fetch(`https://tv-bazar-server-2.onrender.com/user/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setUserInfo(data));
     console.log(setUserInfo);

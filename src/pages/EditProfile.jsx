@@ -21,7 +21,7 @@ const EditProfile = () => {
       name,
     };
 
-    await fetch(`https://tv-bazar-server.vercel.app/user/${data?.email}`, {
+    await fetch(`https://tv-bazar-server-2.onrender.com/user/${data?.email}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
