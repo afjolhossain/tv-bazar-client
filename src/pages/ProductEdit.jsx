@@ -26,7 +26,7 @@ const ProductEdit = () => {
 
     // console.log(productsData);
 
-    await fetch(`http://localhost:5000/products/${_id}`, {
+    await fetch(`https://tv-bazar-server.vercel.app/products/${_id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

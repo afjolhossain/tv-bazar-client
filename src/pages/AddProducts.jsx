@@ -20,7 +20,7 @@ const AddProducts = () => {
 
     console.log(productsData);
 
-    await fetch("http://localhost:5000/products", {
+    await fetch("https://tv-bazar-server.vercel.app/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

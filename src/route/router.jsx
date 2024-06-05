@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://tv-bazar-server.vercel.app/products"),
       },
       {
         path: "about",
@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://tv-bazar-server.vercel.app/products/${params.id}`),
       },
     ],
   },
@@ -82,7 +82,7 @@ export const router = createBrowserRouter([
             <AllProducts />
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/products"),
+        loader: () => fetch("https://tv-bazar-server.vercel.app/products"),
       },
       {
         path: "profile/edit/:id",
@@ -92,7 +92,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/user/data/${params.id}`),
+          fetch(`https://tv-bazar-server.vercel.app/user/data/${params.id}`),
       },
 
       {
@@ -103,7 +103,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.id}`),
+          fetch(`https://tv-bazar-server.vercel.app/products/${params.id}`),
       },
     ],
   },
